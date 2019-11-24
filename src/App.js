@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import classes from './App.module.css';
+import { Canvas } from 'react-three-fiber'
+import classNames from 'classnames'
+import { isMobile } from 'react-device-detect'
 
-function App() {
+import RainEffect from './Three.js/RainEffect'
+import Controls from './Three.js/Controls'
+import ghIcon from './assets/ghIcon.svg'
+
+const App = () => {
+  console.log(isMobile)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Canvas>
+        <RainEffect />
+        {/* <Controls /> */}
+      </Canvas>
+      <div className={classNames(
+        classes.aboutMe,
+        isMobile && classes.aboutMeMobile
+      )}>
+        <h1>Xintru</h1>
+        <p>Frontend developer</p>
+        <a href="https://github.com/xintru">My github</a>
+
+      </div>
     </div>
+
   );
 }
 

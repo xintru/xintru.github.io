@@ -1,0 +1,40 @@
+div {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Monda', sans-serif;
+}
+
+.aboutMe {
+    width: 500px;
+    height: 300px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.aboutMeMobile {
+    bottom: 0;
+    right: 25px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.411);
+}
