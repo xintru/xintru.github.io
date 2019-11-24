@@ -38,7 +38,7 @@ const rainEffect = () => {
       <Lightning />
       <fogExp2 color={0x11111f} density={0.002} />
       <React.Suspense fallback={<mesh />} >
-        {[...Array(25)].map((cloud) => <Clouds />)}
+        {[...Array(25)].map((cloud, i) => <Clouds key={i}/>)}
       </React.Suspense>
       
       <Rain />
