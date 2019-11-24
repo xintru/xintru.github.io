@@ -6,7 +6,6 @@ import { isMobile } from 'react-device-detect'
 
 import RainEffect from './Three.js/RainEffect'
 import Controls from './Three.js/Controls'
-import ghIcon from './assets/ghIcon.svg'
 
 const App = () => {
   console.log(isMobile)
