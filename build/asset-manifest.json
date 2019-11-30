@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f4650fb.chunk.css",
+    "main.js": "/static/js/main.e2ca858d.chunk.js",
+    "main.js.map": "/static/js/main.e2ca858d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8896086d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8896086d.js.map",
+    "static/js/2.4df82c7a.chunk.js": "/static/js/2.4df82c7a.chunk.js",
+    "static/js/2.4df82c7a.chunk.js.map": "/static/js/2.4df82c7a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.082876fe4611b0e00a3cea8850ac20c8.js": "/precache-manifest.082876fe4611b0e00a3cea8850ac20c8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3f4650fb.chunk.css.map": "/static/css/main.3f4650fb.chunk.css.map",
+    "static/media/milkyWay.jpg": "/static/media/milkyWay.9775fefc.jpg",
+    "static/media/moon.jpg": "/static/media/moon.da8274ac.jpg",
+    "static/media/smoke-1.png": "/static/media/smoke-1.a7987bab.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8896086d.js",
+    "static/js/2.4df82c7a.chunk.js",
+    "static/css/main.3f4650fb.chunk.css",
+    "static/js/main.e2ca858d.chunk.js"
+  ]
+}
