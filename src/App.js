@@ -1,31 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './App.module.css';
-import { Canvas } from 'react-three-fiber'
 import classNames from 'classnames'
 import { isMobile } from 'react-device-detect'
-
-import RainEffect from './Three.js/RainEffect'
-import Controls from './Three.js/Controls'
+import { renderInit } from './Three.js/CloudScene'
 
 const App = () => {
-  console.log(isMobile)
+  renderInit()
   return (
-    <div>
-      <Canvas>
-        <RainEffect />
-        {/* <Controls /> */}
-      </Canvas>
-      <div className={classNames(
-        classes.aboutMe,
-        isMobile && classes.aboutMeMobile
-      )}>
-        <h1>Xintru</h1>
-        <p>Frontend developer</p>
-        <a href="https://github.com/xintru">My github</a>
-
-      </div>
+    <div className={classNames(
+      classes.aboutMe,
+      isMobile && classes.aboutMeMobile
+    )} id="content">
+      <h1>Xintru</h1>
+      <p>Frontend разработчик</p>
+      <a href="https://github.com/xintru">Github</a>
+      <p>Моб. телефон: +79133768339</p>
+      <p>Email: xintru@gmail.com</p>
     </div>
-
   );
 }
 
